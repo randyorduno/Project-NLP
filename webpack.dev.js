@@ -13,8 +13,6 @@ module.exports = {
    },
     stats: 'verbose',
     devServer: {
-        port: 8081
-    },
     module: {
         rules: [
             {

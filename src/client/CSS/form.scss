@@ -7,6 +7,34 @@ form {
 input {
     padding: 5px 20px;
     width: 100%;
-    line-height: 16px;
     margin: 10px 0;
+}
+
+.sub-title{
+  font-size: 2em;
+
+}
+
+#text_polarity {
+  font-size: 1.3em;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+#text_polarity_confidence {
+  font-size: 1.3em;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+#text_subjectivity {
+  font-size: 1.3em;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+#text_subjectivity_confidence {
+  font-size: 1.3em;
+  font-style: italic;
+  text-transform: capitalize;
 }

@@ -1,25 +1,26 @@
 function handleSubmit(event) {
-    event.preventDefault()
+  event.preventDefault();
+  const text = document.getElementById("name").value;
+  if (!text) return;
+  console.log(text);
+  fetch("/api", {
+    method: "POST",
+    mode: "cors",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ text })
+  })
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("text_polarity").innerHTML = data.polarity;
+      document.getElementById("text_subjectivity").innerHTML =
+        data.subjectivity;
+      document.getElementById("text_polarity_confidence").innerHTML =
+        data.polarity_confidence;
+      document.getElementById("text_subjectivity_confidence").innerHTML =
+        data.subjectivity_confidence;
+    });
+}
 
-    const postData = async ( url = '', data = {})=>{
-      console.log(data);
-        const response = await fetch('', {
-        method: 'POST',
-        credentials: 'same-origin',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-       // Body data type must match "Content-Type" header
-        body: JSON.stringify(data),
-      });
-
-        try {
-          const newData = await response.json();
-          console.log(newData);
-          return newData;
-        }catch(error) {
-        console.log();
-        }
-    }
-
-export { handleSubmit }
+export { handleSubmit };
