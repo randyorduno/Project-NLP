@@ -1,42 +1,19 @@
 {
-  "name": "NLP",
+  "name": "project-4-nlp.git",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "aylien_textapi": "^0.7.0",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "node": "^13.10.1",
-    "path": "^0.12.7",
-    "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
-    "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.4.2",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.13.1",
-    "optimize-css-assets-webpack-plugin": "^5.0.3",
-    "sass-loader": "^8.0.2",
-    "style-loader": "^1.1.3",
-    "terser-webpack-plugin": "^2.3.5",
-    "webpack-bundle-analyzer": "^3.6.1",
-    "webpack-dev-server": "^3.10.3",
-    "workbox-webpack-plugin": "^5.0.0"
-  },
+  "main": "webpack.dev.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server/index.js",
-    "build-dev": "webpack --config webpack.dev.js --open",
-    "build-prod": "webpack --config webpack.prod.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randyorduno/Project-NLP.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randyorduno/Project-NLP/issues"
+  },
+  "homepage": "https://github.com/randyorduno/Project-NLP#readme"
 }
